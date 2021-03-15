@@ -12,29 +12,28 @@ console.log('count from 0 to 3');
 
 // 1.a. TODO: Write a for loop to console.log the numbers from 0 to 5 
 //   - Which part of the example loop do you need to change to do this?
-//      A: Within the condition of condition counter, change number
-//        4 to number 5.
+//      A: Within the condition of condition counter, changed comparison operator to <=.
 console.log('count from 0 to 5');
-// for (let i = 0; i < 5; i++) {
-//    console.log(i);
-// }
+for (let i = 0; i <= 4; i++) {
+  console.log(i);
+}
 // 1.b. TODO: Write a for loop to console.log the numbers from 3 to 5
 //   - Which part of the example loop do you need to change to do this?
-//      A: Changed the value of i to 3
+//      A: Created if statment with conditional stating i >= 3
 console.log('count from 3 to 5');
-for (let i = 3; i < 5; i++) {
-  console.log(i);
+for (let i = 0; i <= 5; i++) {
+  if (i >= 3)
+    console.log(i);
 }
 // 1.c. TODO: Write a for loop to console.log EVEN numbers from 2 to 10
 //   - Which part of the example loop do you need to change to do this?
+//     A: Set i<=10 in counter condition, and created if statement within for loop checking a compound
+//        conditional stating i must be divisible by 2 with && logical operator stating that i must also be greater than zero.
 console.log('count even numbers from 2 to 10 (2, 4, 6, 8, 10):');
-
-max = 10;
-
-for (let i = 0; i <= max; i++) {
-  if (i % 2 === 0 && i > 0)
+for (let i = 0; i <= 10; i++) {
+  if (i % 2 === 0 && i > 0) {
     console.log(i);
-
+  }
 }
 
 // 1.d. (STRETCH) TODO: Write a for loop to do a counddown from 5 to 0
@@ -67,10 +66,10 @@ while (i > stars.length - 1) {
 }
 // 3.b. TODO: Write a while loop to console.log the numbers from 0 to 5
 console.log('count from 0 to 5');
-
-while (i <= max/2) {
-console.log(i);
-i++;
+max = 10;
+while (i <= max / 2) {
+  console.log(i);
+  i++;
 }
 
 // 3.c. TODO: Write a while loop to console.log the numbers from 10 to 5
@@ -80,5 +79,5 @@ let index = 10
 while (index >= 5) {
   console.log(index);
   index--;
- 
+
 }
